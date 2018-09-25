@@ -11,6 +11,7 @@ class CustomNewSnippetCommand(sublime_plugin.WindowCommand):
         v.set_syntax_file('Packages/XML/XML.tmLanguage')
 
         template = """<snippet>
+	<!--${1:${TM_FILENAME/(.+)..+./$1/}} file name without extension-->
 	<content><![CDATA[${4:\$SELECTION}]]></content>
 	<tabTrigger>${3:$2}</tabTrigger>
 	<scope>${1:source.python}</scope>
