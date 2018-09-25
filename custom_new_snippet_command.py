@@ -15,7 +15,7 @@ class CustomNewSnippetCommand(sublime_plugin.WindowCommand):
 		Replace your snippet content
 	]]></content>
 	<tabTrigger>tabTrigger</tabTrigger>
-	<!--  doblarSign{num:dolarSign{TM_FILENAME/(.+)..+./dolarSignNum/}} file name without extension-->
+	<!--  \${1:\${TM_FILENAME/(.+)..+./\$1/}} file name without extension-->
 	<scope>source.scopeHere</scope>
 	<description>description</description>
 </snippet>
