@@ -13,10 +13,10 @@ class CustomNewSnippetCommand(sublime_plugin.WindowCommand):
         template = """<snippet>
 	
 	<content><![CDATA[
-		${1:${TM_FILENAME/(.+)..+./$1/}} file name without extension
+		TM_FILENAME/(.+)..+./$1/ file name without extension
 	]]></content>
 	<tabTrigger>${3:$2}</tabTrigger>
-	<!--  ${1:${TM_FILENAME/(.+)..+./$1/}} file name without extension	-->
+	<!--  ${1:${TM_FILENAME/(.+)..+./$1/}} file name without extension-->
 	<scope>${1:source.python}</scope>
 	<description>$2</description>
 </snippet>
