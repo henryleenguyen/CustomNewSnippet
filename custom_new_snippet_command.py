@@ -15,10 +15,10 @@ class CustomNewSnippetCommand(sublime_plugin.WindowCommand):
 	<content><![CDATA[
 		Replace your snippet content
 	]]></content>
-	<tabTrigger>${3:$2}</tabTrigger>
-	<!--  ${num:${TM_FILENAME/(.+)..+./$num/}} file name without extension-->
+	<tabTrigger>tabTrigger</tabTrigger>
+	<!--  doblarSign{num:dolarSign{TM_FILENAME/(.+)..+./dolarSignNum/}} file name without extension-->
 	<scope>source.scopeHere</scope>
-	<description>$2</description>
+	<description>description</description>
 </snippet>
 """
         v.run_command("insert_snippet", {"contents": template})
