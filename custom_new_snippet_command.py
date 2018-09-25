@@ -11,10 +11,8 @@ class CustomNewSnippetCommand(sublime_plugin.WindowCommand):
         v.set_syntax_file('Packages/XML/XML.tmLanguage')
 
         template = """<snippet>
-	"${1:${TM_FILENAME/(.+)..+./$1/}}"
 	<content><![CDATA[
 		Replace your snippet content
-		
 	]]></content>
 	<tabTrigger>tabTrigger</tabTrigger>
 	<!--  doblarSign{num:dolarSign{TM_FILENAME/(.+)..+./dolarSignNum/}} file name without extension-->
